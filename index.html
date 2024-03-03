@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Mashup Web App</title>
+</head>
+<body class="container mt-5">
+  <h1 class="text-center">Mashup Web App</h1>
+  <form method="post" action="/mashup" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="artist">Singer Name:</label>
+      <input type="text" name="artist" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="num_videos">Number of Videos:</label>
+      <input type="number" name="num_videos" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="audio_duration">Audio Duration (seconds):</label>
+      <input type="number" name="audio_duration" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="output_file">Output File Name:</label>
+      <input type="text" name="output_file" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email ID:</label>
+      <input type="email" name="email" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</body>
+</html>
